@@ -1,6 +1,5 @@
 import pandas as pd
 print("Iniciando")
-# Nome do primeiro arquivo Excel e as abas a serem lidas
 arquivo_excel = 'Pedidos.xlsx'
 # nomes_abas = ['abril21', 'maio21', 'junho21', 'julho21', 'agosto21', 'setembro21', 'outubro21', 'novembro21', 'dezembro21', 'janeiro22', 'fevereiro22', 'março22', 'abril22', 'maio22', 'junho22', 'julho22', 'agosto22', 'setembro22', 'novembro22', 'dezembro22']
 nomes_abas = ['Pedido1', 'Pedido2', 'Pedido3']
