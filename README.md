@@ -1,8 +1,14 @@
 # Concatenate_sheets
 
-<p>O Script desenvolvido em python tem o objetivo de fazer a união de várias planilhas em uma única.
+<p>O Script desenvolvido em python tem o objetivo de fazer a união de várias planilhas em uma única, evitando o copia e cola que normalmente é utilizado.
   
-O código fará uma comparação para não ter linhas e nem colunas repetidas.</p>
+O código fará uma comparação para não ter linhas e nem colunas repetidas.
+
+Basta editar essas variáveis com o nome dos arquivos desejados.
+</p>
+
+<img src="https://github.com/GabrielGarcoaRodrigues/Concatenate_sheets/assets/60533817/35f68382-545a-460c-aa9b-1de5be38d659">
+<img src="https://github.com/GabrielGarcoaRodrigues/Concatenate_sheets/assets/60533817/a0481a12-eb54-4f53-9d19-c12ccefffeca">
 
 <h3>Exemplo:</h3>
 <p>A planilha na aba "Pedido1" do arquivo "Pedidos"</p>
