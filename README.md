@@ -4,7 +4,7 @@
   
 O código fará uma comparação para não ter linhas e nem colunas repetidas.
 
-Basta editar essas variáveis com o nome dos arquivos desejados.
+Basta editar essas variáveis com o nome dos arquivos e abas desejados.
 </p>
 
 <img src="https://github.com/GabrielGarcoaRodrigues/Concatenate_sheets/assets/60533817/35f68382-545a-460c-aa9b-1de5be38d659">
