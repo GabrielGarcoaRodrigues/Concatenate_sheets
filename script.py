@@ -2,7 +2,7 @@ import pandas as pd
 
 # Nome do primeiro arquivo Excel e as abas a serem lidas
 arquivo_excel = 'Pedidos.xlsx'
-nomes_abas = ['Pedido1', 'Pedido2', 'Pedido3']
+nomes_abas = ['Pedido1']
 
 # Ler todas as abas do primeiro arquivo e armazenar em uma lista de DataFrames
 df_abas = [pd.read_excel(arquivo_excel, sheet_name=aba) for aba in nomes_abas]
@@ -37,7 +37,7 @@ for i, df_aba in enumerate(df_abas):
     outras_abas = df_abas[:i] + df_abas[i+1:]
     df_diferencas = encontrar_diferencas(df_aba, outras_abas)
     df_diferencas_unicas.append(df_diferencas)
-
+    
 # Concatenar todas as linhas únicas
 df_final = pd.concat(df_diferencas_unicas).drop_duplicates(subset=colunas_comuns)
 
