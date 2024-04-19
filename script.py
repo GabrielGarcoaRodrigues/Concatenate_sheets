@@ -1,9 +1,8 @@
 import pandas as pd
-print("Iniciando")
+
 # Nome do primeiro arquivo Excel e as abas a serem lidas
 arquivo_excel = 'Pedidos.xlsx'
-# nomes_abas = ['abril21', 'maio21', 'junho21', 'julho21', 'agosto21', 'setembro21', 'outubro21', 'novembro21', 'dezembro21', 'janeiro22', 'fevereiro22', 'março22', 'abril22', 'maio22', 'junho22', 'julho22', 'agosto22', 'setembro22', 'novembro22', 'dezembro22']
-nomes_abas = ['Pedido1', 'Pedido2', 'Pedido3']
+nomes_abas = ['Pedido1']
 
 # Ler todas as abas do primeiro arquivo e armazenar em uma lista de DataFrames
 df_abas = [pd.read_excel(arquivo_excel, sheet_name=aba) for aba in nomes_abas]
@@ -38,9 +37,11 @@ for i, df_aba in enumerate(df_abas):
     outras_abas = df_abas[:i] + df_abas[i+1:]
     df_diferencas = encontrar_diferencas(df_aba, outras_abas)
     df_diferencas_unicas.append(df_diferencas)
-
+    
 # Concatenar todas as linhas únicas
 df_final = pd.concat(df_diferencas_unicas).drop_duplicates(subset=colunas_comuns)
 
 # Salvar o DataFrame final em um novo arquivo Excel
-df_final.to_excel('Unial_final.xlsx', index=False)
+df_final.to_excel('Concatenado.xlsx', index=False)
+
+print('Processo concluído com sucesso!')
